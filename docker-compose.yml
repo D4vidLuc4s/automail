@@ -80,7 +80,6 @@ services:
             - '/dev/shm:/dev/shm'
        networks:
            - sail
-           - net
 networks:
     sail:
         driver: bridge
