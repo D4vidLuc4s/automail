@@ -1,5 +1,4 @@
-## Comando para o envio de email para teste:
-    - php artisan example:send-mail
+## Comandos para o projeto estão no arquivo Makefile
 
 ## Arquivos criados para ser feita a configuração de teste:
     - app\Console\Commands\ExampleSendMailCommand.php
