@@ -8,5 +8,7 @@
 </head>
 <body>
     <h1>Hello from the other side!</h1>
+    <h3>if you're seeing this message!<br>
+        it means the test was successful!</h3>
 </body>
 </html>
