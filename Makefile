@@ -14,7 +14,14 @@ stop:
 	docker-compose stop mailhog
 
 send: 
-	php artisan example:send-mail
+	php artisan mail:send
 
 test:
-	./vendor/bin/phpunit tests/Feature/MailTest.php
+	php artisan dusk
+
+sail-up:
+	./vendor/bin/sail up -d
+
+sail-down:
+	./vendor/bin/sail down
+
