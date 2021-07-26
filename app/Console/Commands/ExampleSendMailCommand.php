@@ -4,7 +4,7 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 
-use App\Mail\ExampleMail;
+use App\Mail\Welcome;
 use Illuminate\Support\Facades\Mail;
 
 class ExampleSendMailCommand extends Command
@@ -14,7 +14,7 @@ class ExampleSendMailCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'example:send-mail';
+    protected $signature = 'mail:send';
 
     /**
      * The console command description.
@@ -40,6 +40,6 @@ class ExampleSendMailCommand extends Command
      */
     public function handle()
     {
-        Mail::to('example@mailinator.net')->send(new ExampleMail());
+        Mail::to('teste@nyxtech.com')->send(new Welcome());
     }
 }
