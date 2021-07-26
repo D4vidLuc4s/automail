@@ -2,7 +2,7 @@
 
 ## Arquivos criados para ser feita a configuração de teste:
     - app\Console\Commands\ExampleSendMailCommand.php
-    - app\Mail\ExampleMail.php
+    - app\Mail\Welcome.php
     - resources\views\mails\example.blade.php
 
 ## Site usado para base de criação do teste:
