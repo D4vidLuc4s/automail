@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Mail;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
+});
+
+#Route::get('/mail', function(){
+#    return view('mails/example');
+#});
+
+Route::get('/sendMail', function() {
+    Mail::to('nyx@teste.com')->send(new \App\Mail\Welcome());
+
+    return view('mails/example');
 });
