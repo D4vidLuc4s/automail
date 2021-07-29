@@ -1,0 +1,24 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "",
+        "description": "API to make verify test in mailhog",
+        "version": "2.0.0"
+    },
+    "host": "0.0.0.0:8025", 
+    "paths": {
+        "/": {
+            "get": {
+                "description": "Test to verify email in Mailhog",
+                "responses": {
+                    "default": {
+                        "description": "Email verification"
+                    }
+                }
+            }
+        }
+    },
+    "security": [
+        []
+    ]
+}
