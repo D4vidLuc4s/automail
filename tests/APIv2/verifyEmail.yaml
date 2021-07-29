@@ -1,0 +1,29 @@
+swagger: "2.0"
+info:
+  title: Verify Email Test
+  description: Test to verify if email arrived.
+  version: 2.0.0
+
+host: 0.0.0.0:8025
+basePath: /v2
+scheme:
+  - http
+
+paths:
+  /email
+    get:
+      summary: Returns email subject
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      response:
+        200:
+          description: Email received
+          schema
+            type: object
+            properties:
+              name: 
+                type: string
+                example: AutoMail
+  
