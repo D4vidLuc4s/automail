@@ -27,3 +27,7 @@ Route::get('/sendMail', function() {
 
     return view('mails/example');
 });
+
+Route::group(['prefix' => 'api/'], function() {
+    Route::get('email', 'EmailController@index');
+});
